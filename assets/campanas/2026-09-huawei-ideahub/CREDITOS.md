@@ -12,3 +12,4 @@ Fotos de [Unsplash](https://unsplash.com/license) (uso comercial libre, sin atri
 | `fondo-estudiantes-azul.jpg` | https://unsplash.com/photos/8gAbl776pc0 (con capa azul #155382 para leer el texto) |
 | `rack-movil-ilustracion.png` | Ilustración propia |
 | `huawei-logo-blanco.png` | Logo de Huawei (marca registrada de Huawei), versión blanca del archivo de Wikipedia. Uso como socio/partner. |
+| `ideahub-rack-producto.jpg`, `ideahub-producto-560.jpg` | Foto oficial del producto HUAWEI IdeaHub entregada por FP (fondo transparente combinado con el color de cada tarjeta) |
