@@ -1,11 +1,12 @@
 // Renderiza íconos Tabler (MIT) a PNG para correo: 96 px (se muestran a 24–48 px).
 const sharp = require('sharp'), fs = require('fs'), path = require('path');
-const src = path.join(path.dirname(require.resolve('@tabler/icons/package.json')), 'icons');
+const src = path.dirname(path.dirname(require.resolve('@tabler/icons/outline/cpu.svg')));
 const out = process.argv[2];
 const lineal = ['device-desktop','hand-finger','camera','cpu','school','presentation','users-group',
-  'presentation-analytics','settings','tool','users','chart-bar','calendar-event','chevron-right','devices','bulb','building-community'];
+  'presentation-analytics','settings','tool','users','chart-bar','calendar-event','chevron-right','devices','bulb','building-community',
+  'server','network','shield-lock','message-circle'];
 const colores = { blanco: '#ffffff', azul: '#2181AF' };
-const redes = ['brand-linkedin','brand-facebook','brand-instagram','brand-youtube'];
+const redes = ['brand-linkedin','brand-facebook','brand-instagram','brand-youtube','brand-whatsapp'];
 (async () => {
   for (const [dir, hex] of Object.entries(colores)) {
     fs.mkdirSync(path.join(out, 'lineal', dir), { recursive: true });

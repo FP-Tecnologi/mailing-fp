@@ -47,7 +47,7 @@ Todas usan la paleta de FP, se adaptan a celular y tienen el mismo encabezado y 
 2. Reemplazar los textos entre `[corchetes]` y los enlaces (`[ENLACE]`, `[ENLACE_BAJA]`…).
 3. Subir las fotos a `assets/campanas/AAAA-MM-nombre-campana/` y cambiar las URLs de las imágenes de muestra.
 4. Hacer commit y push a `main`.
-5. Enviarse una prueba a Gmail y Outlook (computadora y celular) antes del envío masivo.
+5. Cumplir el [checklist](docs/checklist-mailing.md): `python herramientas/verificar-mailing.py` y prueba en Gmail y Outlook (computadora y celular) antes del envío masivo.
 
 ## Imágenes
 
