@@ -19,7 +19,7 @@ def btns(msg):
 </tr></table>'''
 
 
-def page(title, pre, headline, sub, prize, msg, winners=None):
+def page(title, pre, headline, sub, prize, msg, winners=None, confeti=True):
     cards = ''
     if winners:
         rows = ''.join(
@@ -29,6 +29,9 @@ def page(title, pre, headline, sub, prize, msg, winners=None):
     st = ''.join(
         f'<tr><td width="40" valign="top" style="padding:7px 0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="32" height="32" align="center" bgcolor="#ffffff" style="background:#ffffff;border-radius:16px;font-size:16px;font-weight:800;color:{BLUE};">{i}</td></tr></table></td><td valign="middle" style="padding:7px 0;font-size:15px;line-height:22px;color:#ffffff;">{t}</td></tr>'
         for i, t in enumerate(STEPS, 1))
+    strip = lambda f: f'<tr><td style="font-size:0;line-height:0;"><img src="{CDN}{f}" width="640" alt="" style="width:100%;max-width:640px;height:auto;"></td></tr>' if confeti else ''
+    top, bottom = strip('confeti-arriba-v2.jpg'), strip('confeti-abajo-v2.jpg')
+    emo = '&#127881; ' if confeti else ''
     return f'''<!DOCTYPE html>
 <html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
@@ -76,11 +79,11 @@ def page(title, pre, headline, sub, prize, msg, winners=None):
 </tr></table></td></tr>
 
 <!-- Confeti -->
-<tr><td style="font-size:0;line-height:0;"><img src="{CDN}confeti-arriba-v2.jpg" width="640" alt="" style="width:100%;max-width:640px;height:auto;"></td></tr>
+{top}
 
 <!-- Titular -->
 <tr><td class="pad" align="center" style="padding:18px 36px 4px 36px;">
-<div style="font-size:13px;font-weight:700;letter-spacing:2px;color:{BLUE};text-transform:uppercase;">&#127881; Resultado del sorteo &#127881;</div>
+<div style="font-size:13px;font-weight:700;letter-spacing:2px;color:{BLUE};text-transform:uppercase;">{emo}Resultado del sorteo{emo and ' &#127881;'}</div>
 {headline}
 <p style="margin:0;font-size:16px;line-height:24px;color:#4a6378;">{sub}</p>
 </td></tr>
@@ -101,7 +104,7 @@ def page(title, pre, headline, sub, prize, msg, winners=None):
 
 <tr><td align="center" style="padding:20px 36px 26px 36px;font-size:16px;line-height:24px;font-weight:700;color:{DARK};">¡Gracias por ser parte de esta experiencia!</td></tr>
 
-<tr><td style="font-size:0;line-height:0;"><img src="{CDN}confeti-abajo-v2.jpg" width="640" alt="" style="width:100%;max-width:640px;height:auto;"></td></tr>
+{bottom}
 
 <!-- Footer -->
 <tr><td class="pad" align="center" bgcolor="{DARK}" style="padding:24px 36px 26px 36px;background:{DARK};">
@@ -141,4 +144,4 @@ save('ganadores-los-3.html', page(
     '¡Felicidades a los ganadores del sorteo! Mochila Dell | FP Tecnologi & System',
     'Julio Huamani, Rossell Salazar y Nicolás Gamboa ganaron una mochila Dell. Responde este correo para coordinar el recojo.',
     h, 'Gracias a todos por participar en nuestro sorteo. Estos son los ganadores:', 'Cada uno ganó una mochila Dell',
-    'Hola, soy ganador(a) de la mochila Dell. Quiero coordinar el recojo.', W))
+    'Hola, soy ganador(a) de la mochila Dell. Quiero coordinar el recojo.', W, confeti=False))
