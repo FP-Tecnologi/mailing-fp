@@ -61,7 +61,7 @@ def page(title, pre, headline, sub, prize, msg, winners=None, confeti=True):
     .button-table, .button-table td {{ width:100% !important; }}
     .button {{ display:block !important; }}
     .gap {{ display:block !important; height:10px !important; width:100% !important; }}
-    .logo-fp {{ width:120px !important; height:auto !important; }}
+    .logo-fp {{ width:130px !important; height:auto !important; }}
     .logo-dell {{ width:100px !important; height:auto !important; }}
   }}
 </style>
@@ -76,10 +76,10 @@ def page(title, pre, headline, sub, prize, msg, winners=None, confeti=True):
 <tr><td bgcolor="{BLUE}" style="height:8px;background:{BLUE};font-size:0;line-height:0;">&nbsp;</td></tr>
 
 <!-- Logos -->
-<tr><td class="pad" bgcolor="{DARK}" style="padding:16px 36px;background:{DARK};">
+<tr><td class="pad" style="padding:20px 36px 14px 36px;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-<td align="left" valign="middle"><img class="logo-fp" src="https://cdn.jsdelivr.net/gh/FP-Tecnologi/mailing-producto@main/assets/marca/fp-logo-blanco-hd.png" width="150" alt="FP Tecnologi &amp; System" style="width:150px;height:auto;"></td>
-<td align="right" valign="middle"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right"><tr><td bgcolor="#ffffff" style="background:#ffffff;border-radius:8px;padding:7px 10px;"><img class="logo-dell" src="{CDN}logo-dell-titanium.png" width="120" alt="Dell Technologies Titanium Partner" style="width:120px;height:auto;"></td></tr></table></td>
+<td width="55%" align="center" valign="middle" style="padding-right:14px;border-right:1px solid #c9dbe8;"><img class="logo-fp" src="https://cdn.jsdelivr.net/gh/FP-Tecnologi/mailing-producto@main/assets/marca/fp-logo-color.png" width="170" alt="FP Tecnologi &amp; System" style="width:170px;height:auto;"></td>
+<td width="45%" align="center" valign="middle" style="padding-left:14px;"><img class="logo-dell" src="{CDN}logo-dell-titanium.png" width="130" alt="Dell Technologies Titanium Partner" style="width:130px;height:auto;"></td>
 </tr></table></td></tr>
 
 <!-- Confeti -->
