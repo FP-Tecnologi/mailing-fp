@@ -10,7 +10,7 @@ STEPS = ['Responde a este correo para coordinar el recojo.', 'Te confirmaremos e
 
 
 def btns(msg):
-    wa = 'https://wa.me/51960951976?text=' + u.quote(msg)
+    wa = 'https://wa.me/51908530268?text=' + u.quote(msg)
     mail = 'mailto:marketing@fptecnologi.com?subject=' + u.quote('Recojo de mi mochila Dell')
     return f'''<table role="presentation" class="button-table" cellpadding="0" cellspacing="0" border="0" align="center"><tr>
 <td align="center" bgcolor="#ffffff" style="background:#ffffff;border-radius:8px;mso-padding-alt:14px 26px;"><a href="{mail}" target="_blank" class="button" style="display:inline-block;padding:14px 26px;font-size:15px;line-height:18px;font-weight:700;color:{DARK};text-decoration:none;border-radius:8px;">Responder por correo</a></td>
@@ -108,7 +108,7 @@ def page(title, pre, headline, sub, prize, msg, winners=None):
 <div style="font-size:15px;font-weight:700;color:#ffffff;">FP Tecnologi &amp; System S.A.C.</div>
 <div style="font-size:12px;line-height:20px;color:#cfe3ef;margin-top:6px;">Gerencia de Marketing y Publicidad<br>
 <a href="mailto:marketing@fptecnologi.com" style="color:#ffffff;">marketing@fptecnologi.com</a> &nbsp;|&nbsp;
-<a href="https://wa.me/51960951976" style="color:#ffffff;">+51 960 951 976</a> &nbsp;|&nbsp;
+<a href="https://wa.me/51908530268" style="color:#ffffff;">+51 908 530 268</a> &nbsp;|&nbsp;
 <a href="https://www.fptecnologi.com" style="color:#ffffff;">www.fptecnologi.com</a></div>
 <div style="font-size:11px;line-height:17px;color:#a9c8dc;margin-top:12px;">Si no deseas recibir más información, <a href="[ENLACE_BAJA]" style="color:#ffffff;text-decoration:underline;">solicita la baja aquí</a>.</div>
 </td></tr>
