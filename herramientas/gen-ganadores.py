@@ -4,7 +4,7 @@ import os
 import urllib.parse as u
 
 CDN = 'https://cdn.jsdelivr.net/gh/FP-Tecnologi/mailing-producto@main/assets/campanas/2026-10-ganadores-sorteo/'
-W = [('Roosevelt Torres', 'roosevelt-torres'), ('Doris Prado Castañeda', 'doris-prado'), ('Romel Leyva', 'romel-leyva')]
+W = [('Julio Huamani', 'julio-huamani'), ('Rossell Salazar', 'rossell-salazar'), ('Nicolás Gamboa', 'nicolas-gamboa')]
 BLUE, DARK = '#2181AF', '#155382'
 STEPS = ['Responde a este correo para coordinar el recojo.', 'Te confirmaremos el lugar, la fecha y el horario de entrega.']
 
@@ -54,8 +54,8 @@ def page(title, pre, headline, sub, prize, msg, winners=None):
     .button-table, .button-table td {{ width:100% !important; }}
     .button {{ display:block !important; }}
     .gap {{ display:block !important; height:10px !important; width:100% !important; }}
-    .logo-fp {{ width:140px !important; height:auto !important; }}
-    .logo-dell {{ width:130px !important; height:auto !important; }}
+    .logo-fp {{ width:120px !important; height:auto !important; }}
+    .logo-dell {{ width:100px !important; height:auto !important; }}
   }}
 </style>
 </head>
@@ -69,10 +69,10 @@ def page(title, pre, headline, sub, prize, msg, winners=None):
 <tr><td bgcolor="{BLUE}" style="height:8px;background:{BLUE};font-size:0;line-height:0;">&nbsp;</td></tr>
 
 <!-- Logos -->
-<tr><td class="pad" style="padding:22px 36px 6px 36px;">
+<tr><td class="pad" bgcolor="{DARK}" style="padding:16px 36px;background:{DARK};">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-<td width="50%" align="center" valign="middle" style="padding-right:12px;border-right:1px solid #c9dbe8;"><img class="logo-fp" src="{CDN}logo-fp-color.png" width="230" alt="FP Tecnologi &amp; System" style="width:230px;height:auto;"></td>
-<td width="50%" align="center" valign="middle" style="padding-left:12px;"><img class="logo-dell" src="{CDN}logo-dell-titanium.png" width="210" alt="Dell Technologies Titanium Partner" style="width:210px;height:auto;"></td>
+<td align="left" valign="middle"><img class="logo-fp" src="https://cdn.jsdelivr.net/gh/FP-Tecnologi/mailing-producto@main/assets/marca/fp-logo-blanco-hd.png" width="150" alt="FP Tecnologi &amp; System" style="width:150px;height:auto;"></td>
+<td align="right" valign="middle"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right"><tr><td bgcolor="#ffffff" style="background:#ffffff;border-radius:8px;padding:7px 10px;"><img class="logo-dell" src="{CDN}logo-dell-titanium.png" width="120" alt="Dell Technologies Titanium Partner" style="width:120px;height:auto;"></td></tr></table></td>
 </tr></table></td></tr>
 
 <!-- Confeti -->
@@ -139,6 +139,6 @@ for n, slug in W:
 h = f'<h1 class="title" style="margin:10px 0 12px 0;font-size:36px;line-height:42px;color:#16324a;">¡Felicidades a nuestros <span style="color:{BLUE};">3 ganadores</span>!</h1>'
 save('ganadores-los-3.html', page(
     '¡Felicidades a los ganadores del sorteo! Mochila Dell | FP Tecnologi & System',
-    'Roosevelt Torres, Doris Prado Castañeda y Romel Leyva ganaron una mochila Dell. Responde este correo para coordinar el recojo.',
+    'Julio Huamani, Rossell Salazar y Nicolás Gamboa ganaron una mochila Dell. Responde este correo para coordinar el recojo.',
     h, 'Gracias a todos por participar en nuestro sorteo. Estos son los ganadores:', 'Cada uno ganó una mochila Dell',
     'Hola, soy ganador(a) de la mochila Dell. Quiero coordinar el recojo.', W))
