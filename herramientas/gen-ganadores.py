@@ -75,6 +75,9 @@ def page(title, pre, headline, sub, prize, msg, winners=None):
 <td width="50%" align="center" valign="middle" style="padding-left:12px;"><img class="logo-dell" src="{CDN}logo-dell-titanium.png" width="210" alt="Dell Technologies Titanium Partner" style="width:210px;height:auto;"></td>
 </tr></table></td></tr>
 
+<!-- Confeti -->
+<tr><td style="font-size:0;line-height:0;"><img src="{CDN}confeti-arriba.jpg" width="640" alt="" style="width:100%;max-width:640px;height:auto;"></td></tr>
+
 <!-- Titular -->
 <tr><td class="pad" align="center" style="padding:18px 36px 4px 36px;">
 <div style="font-size:13px;font-weight:700;letter-spacing:2px;color:{BLUE};text-transform:uppercase;">&#127881; Resultado del sorteo &#127881;</div>
@@ -97,6 +100,8 @@ def page(title, pre, headline, sub, prize, msg, winners=None):
 </table></td></tr>
 
 <tr><td align="center" style="padding:20px 36px 26px 36px;font-size:16px;line-height:24px;font-weight:700;color:{DARK};">¡Gracias por ser parte de esta experiencia!</td></tr>
+
+<tr><td style="font-size:0;line-height:0;"><img src="{CDN}confeti-abajo.jpg" width="640" alt="" style="width:100%;max-width:640px;height:auto;"></td></tr>
 
 <!-- Footer -->
 <tr><td class="pad" align="center" bgcolor="{DARK}" style="padding:24px 36px 26px 36px;background:{DARK};">
