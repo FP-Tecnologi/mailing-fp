@@ -23,7 +23,11 @@ def page(title, pre, headline, sub, prize, msg, winners=None, confeti=True):
     cards = ''
     if winners:
         rows = ''.join(
-            f'<tr><td style="padding:5px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#eaf4fa" style="background:#eaf4fa;border:1px solid #cfe3ef;border-radius:10px;border-collapse:separate;"><tr><td width="52" align="center" style="padding:14px 0 14px 14px;font-size:24px;font-weight:800;color:{BLUE};">{i}</td><td style="padding:14px 18px 14px 6px;font-size:19px;line-height:24px;font-weight:700;color:{DARK};">{n}</td></tr></table></td></tr>'
+            f'<tr><td style="padding:6px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="background:#ffffff;border:1px solid #cfe3ef;border-left:6px solid {BLUE};border-radius:12px;border-collapse:separate;box-shadow:0 3px 10px rgba(33,129,175,.12);"><tr>'
+            f'<td width="76" align="center" valign="middle" style="padding:16px 0 16px 16px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="52" height="52" align="center" valign="middle" bgcolor="{BLUE}" style="background:{BLUE};border-radius:26px;font-size:20px;font-weight:800;color:#ffffff;letter-spacing:1px;">{"".join(w[0] for w in n.split()[:2]).upper()}</td></tr></table></td>'
+            f'<td valign="middle" style="padding:16px 12px 16px 6px;"><div style="font-size:12px;line-height:16px;font-weight:700;letter-spacing:1.5px;color:{BLUE};text-transform:uppercase;">Ganador {i} &middot; Mochila Dell</div><div style="font-size:21px;line-height:27px;font-weight:800;color:{DARK};margin-top:2px;">{n}</div></td>'
+            f'<td width="44" align="center" valign="middle" style="padding-right:14px;font-size:26px;line-height:26px;">&#127942;</td>'
+            '</tr></table></td></tr>'
             for i, (n, _) in enumerate(winners, 1))
         cards = f'<tr><td class="pad" style="padding:6px 36px 4px 36px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">{rows}</table></td></tr>'
     st = ''.join(
