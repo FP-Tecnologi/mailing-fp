@@ -76,7 +76,7 @@ def page(title, pre, headline, sub, prize, msg, winners=None):
 </tr></table></td></tr>
 
 <!-- Confeti -->
-<tr><td style="font-size:0;line-height:0;"><img src="{CDN}confeti-arriba.jpg" width="640" alt="" style="width:100%;max-width:640px;height:auto;"></td></tr>
+<tr><td style="font-size:0;line-height:0;"><img src="{CDN}confeti-arriba-v2.jpg" width="640" alt="" style="width:100%;max-width:640px;height:auto;"></td></tr>
 
 <!-- Titular -->
 <tr><td class="pad" align="center" style="padding:18px 36px 4px 36px;">
@@ -101,7 +101,7 @@ def page(title, pre, headline, sub, prize, msg, winners=None):
 
 <tr><td align="center" style="padding:20px 36px 26px 36px;font-size:16px;line-height:24px;font-weight:700;color:{DARK};">¡Gracias por ser parte de esta experiencia!</td></tr>
 
-<tr><td style="font-size:0;line-height:0;"><img src="{CDN}confeti-abajo.jpg" width="640" alt="" style="width:100%;max-width:640px;height:auto;"></td></tr>
+<tr><td style="font-size:0;line-height:0;"><img src="{CDN}confeti-abajo-v2.jpg" width="640" alt="" style="width:100%;max-width:640px;height:auto;"></td></tr>
 
 <!-- Footer -->
 <tr><td class="pad" align="center" bgcolor="{DARK}" style="padding:24px 36px 26px 36px;background:{DARK};">
